@@ -2,19 +2,21 @@
   "name": "admin",
   "version": "0.1.0",
   "private": true,
+  "author": "Chan <zhengjunchan@qq.com>",
   "scripts": {
+    "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "less": "^3.0.4",
-    "less-loader": "^4.1.0",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
     "@vue/cli-plugin-babel": "^3.0.0-beta.11",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.11",
     "@vue/cli-service": "^3.0.0-beta.11",

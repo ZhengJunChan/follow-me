@@ -1,6 +1,12 @@
-<!-- [home_page]   @Author: 郑君婵   @DateTime: 2017-09-25 -->
+<!-- [left_nav]   @Author: 郑君婵   @DateTime: 2017-09-25 -->
 <template>
   <div class="left_nav">
+    <ul class="nav_list">
+      <router-link tag="li" to="/activity" :class="{active: $route.fullPath.startsWith('/activity', 0)}" >
+        <i class="iconfont icon-huodong"></i>
+        <span>活动</span>
+      </router-link>
+    </ul>
   </div>
 </template>
 
@@ -17,6 +23,9 @@ export default {
       password: '',
       errorTip: ''
     }
+  },
+  created () {
+    console.log(this.$route.fullPath.startsWith('/singer', 0))
   },
   methods: {
     login () {

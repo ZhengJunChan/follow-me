@@ -1,4 +1,31 @@
+@import './../../../../less/index.less';
+
 .left_nav{
-  width: 300px;
+  width: 220px;
   background-color: #2d4054;
+  padding-top: @module-padding;
+}
+
+.nav_list{
+	&>li {
+		color: #fff;
+		height: 45px;
+		cursor: pointer;
+		line-height: 45px;
+		padding: 0 30px;
+		font-size: @main-nav;
+		&:hover,
+		&.active {
+			color: #00b4cf;
+			background-color: #435466;
+		}
+		&>.iconfont{
+			font-size: 20px;
+			vertical-align: middle;
+		}
+
+		&>span{
+			padding-left: 10px;
+		}
+	}
 }
