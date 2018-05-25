@@ -24,9 +24,6 @@ export default {
       errorTip: ''
     }
   },
-  created () {
-    console.log(this.$route.fullPath.startsWith('/singer', 0))
-  },
   methods: {
     login () {
       this.errorTip = ''
