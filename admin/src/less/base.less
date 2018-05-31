@@ -45,6 +45,21 @@ li {
 
 
 /**
+ * [vertical_center 垂直居中]
+ * @Author   郑君婵
+ * @DateTime 2017-06-30
+ * 注：垂直居中相对的元素需要设置 position: relative;
+ */
+
+.vertical_center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+/**
  * [clear_float 清除浮动]
  * @Author   郑君婵
  * @DateTime 2017-06-30
@@ -82,4 +97,18 @@ li {
 
 .fr {
     float: right;
+}
+
+/**
+ * [删除type="number"时，左侧的上下箭头]
+ * @Author   郑君婵
+ * @DateTime 2017-07-1
+ */
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }

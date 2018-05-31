@@ -15,7 +15,7 @@
     <div class="search_label clear_float">
       <input type="text" v-model.trim="seachKey" @keyup.enter="search" :class="{no_tip: seachKey}">
 
-      <i class="iconfont icon-add add_btn fr"></i>
+      <router-link tag="i" class="iconfont icon-add add_btn fr" to="/activity/release" />
     </div>
   </div>
 </template>

@@ -1,0 +1,28 @@
+@import './../../../less/index.less';
+
+.release_page {
+    // background-color: @content-bg;
+}
+
+.content {
+    background-color: @content-bg;
+    padding: @module-padding;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item+.item {
+    margin-top: @box-padding;
+}
+
+.price_label {
+    display: inline-block;
+    &+& {
+        margin-left: 100px;
+    }
+    .price_input {
+        width: 100px;
+        display: inline-block;
+        margin: 0 @text-border-padding;
+    }
+}
