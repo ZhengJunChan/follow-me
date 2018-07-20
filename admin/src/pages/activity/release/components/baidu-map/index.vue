@@ -5,6 +5,8 @@
 </template>
 
 <script type="text/javascript">
+// import BaiDuMap from 'http://api.map.baidu.com/api?v=2.0&ak=jGZ2MixxZZISlxPaf44cYmWpHoFLqk1Y'
+// console.log(BaiDuMap)
 
 export default {
   props: {

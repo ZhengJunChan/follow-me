@@ -1,0 +1,47 @@
+@import './../../../less/index.less';
+
+@input-height: 300px;
+
+.editor_component {
+    position: relative;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    height: @input-height;
+    line-height: 45px;
+    border: 1px solid @border-color;
+    padding: 0 @text-border-padding;
+    &:focus {
+        border-color: #ff9a47;
+    }
+}
+
+// .input_label {
+//     &>input {
+//     }
+
+/* 限制字数以后的样式 */
+
+&.limit {
+
+    &>input {
+        padding: 0 54px 0 @text-border-padding;
+    }
+    .limit_num {
+        display: inline;
+    }
+}
+
+.limit_num {
+    display: none;
+    position: absolute;
+    right: @text-border-padding;
+    color: @input-limit-number-color;
+}
+
+
+/* / 限制字数以后的样式 */
+
+// }
