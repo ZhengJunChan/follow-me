@@ -36,11 +36,11 @@
       </input-box>
 
       <input-box class="item" title="费用说明">
-        <input-label v-model.trim="priceIntro" placeholder="取一个响亮而不失风趣的活动名称" :maxlength="45" />
+        <editor v-model.trim="priceIntro" />
       </input-box>
 
       <input-box class="item" title="报名须知">
-        <input-label v-model.trim="notice" placeholder="取一个响亮而不失风趣的活动名称" :maxlength="45" />
+        <editor v-model.trim="notice" />
       </input-box>
 
       <input-box class="item" title="行程详情">
