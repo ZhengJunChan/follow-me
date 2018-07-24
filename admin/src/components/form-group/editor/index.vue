@@ -57,7 +57,7 @@ export default {
     }
   },
   beforeDestroy () {
-    tinymce.get(this.id).destroy();
+    // tinymce.get(this.id).destroy();
   }
 }
 </script>
