@@ -19,8 +19,8 @@
         </div>
       </input-box>
 
-      <input-box class="item" title="活动日期">
-        <input-label v-model.trim="name" placeholder="取一个响亮而不失风趣的活动名称" :maxlength="45" />
+      <input-box class="item" title="发团日期">
+        <calendar />
       </input-box>
 
       <input-box class="item" title="目的地">
@@ -46,16 +46,24 @@
       <input-box class="item" title="行程详情">
         <editor v-model.trim="desc" />
       </input-box>
+
+      <div class="btn_label">
+        <button>存草稿</button>
+        <button @click="release">发布</button>
+        <button>取消</button>
+      </div>
     </div>
+
   </div>
 </template>
 
 <script type="text/javascript">
-import { Editor, InputBox, InputLabel } from '@/components/form-group'
+import { Editor, InputBox, InputLabel, Calendar } from '@/components/form-group'
 
 export default {
   components: {
     Editor,
+    Calendar,
     InputBox,
     InputLabel
   },
@@ -83,7 +91,7 @@ export default {
     }
   },
   methods: {
-    login () {
+    release () {
     }
   }
 }

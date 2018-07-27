@@ -25,3 +25,20 @@
         margin: 0 @text-border-padding;
     }
 }
+
+.btn_label {
+    text-align: center;
+    margin-top: @module-padding;
+    &>button {
+        cursor: pointer;
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        width: 160px;
+        color: #fff;
+        background-color: #ffbf77;
+        &+button {
+            margin-left: @box-padding;
+        }
+    }
+}
